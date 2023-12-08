@@ -1,0 +1,9 @@
+<div *ngIf="remainingTime > 0">
+  <p>{{ remainingTime | date: 'HH:mm:ss' }}</p>
+</div>
+
+<div class="countdown">
+  <div *ngFor="let digit of formattedTime; let i = index" class="digit">
+    {{ digit }}
+  </div>
+</div>

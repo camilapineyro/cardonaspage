@@ -1,0 +1,16 @@
+
+.countdown {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .digit {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+  }

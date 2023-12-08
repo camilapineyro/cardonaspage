@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      PREGUNTAS FRECUENTES
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button default-href="#" color="medium"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Ayuda</ion-title>
+      <img src="assets/culo.jpg" alt="" width="120px" class="logo">
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-accordion-group>
+    <ion-accordion *ngFor="let faq of faqs" [value]="faq.pregunta">
+      <ion-item slot= "header" color="light">
+        <ion-label>{{ faq.pregunta }}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        {{ faq.respuesta }}
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+
+</ion-content>

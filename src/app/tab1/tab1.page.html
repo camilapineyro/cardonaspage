@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Inicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+
+    <ion-toolbar>
+
+      <img src="assets/culo.jpg" alt="" width="120px" class="logo">
+    </ion-toolbar>
+
+  </ion-header>
+
+  <h4>BIENVENIDAS GORDAS</h4>
+  
+  <ion-card>
+    <img alt="equipo" src="assets/gordas.jpg" />
+    <ion-card-content id="p"> Countdown -Me acostumbre a ti amor-
+      REMASTERED 2024: </ion-card-content>
+  </ion-card>
+  <app-countdown [endDate]="'2024-01-01'"></app-countdown>
+
+  <ion-button color="medium" expand="block" id="bot-alq"  [routerLink]="['/tabs/tab2']">Pasar de página</ion-button>
+
+
+</ion-content>
